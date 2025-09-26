@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa na stránke</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #232526 0%, #414345 100%);
+            color: #f5e9c8;
+            font-family: 'Orbitron', Arial, sans-serif;
+            min-height: 100vh;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            color: #e6b800;
+            text-shadow: 0 2px 8px #000, 0 0 10px #e6b80055;
+        }
+        .test-section {
+            width: 90%;
+            max-width: 900px;
+            margin: 60px auto 0 auto;
+            padding: 24px;
+            background: #232526cc;
+            border-radius: 18px;
+            box-shadow: 0 4px 16px #000a;
+            border: 2px solid #e6b800;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 24px;
+        }
+        .btn {
+            background: #e6b800;
+            color: #232526;
+            font-size: 1.2em;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-family: 'Orbitron', Arial, sans-serif;
+            box-shadow: 0 4px 16px #000a;
+            transition: background 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn:hover {
+            background: #ffd700;
+        }
+        @media (max-width: 600px) {
+            .test-section {
+                width: 98%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Google Nájdi moje zariadenie</h1>
+    <div class="test-section">
+        <div class="center">
+            <a href="https://www.google.com/android/find/?utm_source=g1&utm_medium=web&utm_campaign=device_backup_view" target="_blank" class="btn">
+                Otvoriť Google Nájdi moje zariadenie v novom okne
+            </a>
+        </div>
+        <p style="text-align:center; margin-top:18px; color:#e6b800;">
+            Kliknutím na tlačidlo otvoríte stránku Google Nájdi moje zariadenie.
+        </p>
+    </div>
+</body>
+</html>
